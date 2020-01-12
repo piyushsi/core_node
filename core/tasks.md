@@ -1,8 +1,11 @@
 1. Explain Node and V8 in your own words ? 
 // Answer here...
+Node is a runtime environment i.e executed JavaScript  outside of a browser
+V8 is js engine
 
 2. Explain steps in REPL(here) and command to start REPL ?
-// Answer here...
+// Answer here... type 'node' and enter the REPL in term
+
 
 3. Run `index.js` in the same directory as script writer using `node FILE_NAME.js` and output result of console here.
 
