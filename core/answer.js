@@ -31,7 +31,7 @@ Request Headers>>>>>>>>
 :method: GET
 :path: /jot.html
 :scheme: https
-accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/ *;q=0.8,application/signed-exchange;v=b3;q=0.9
 accept-encoding: gzip, deflate, br
 accept-language: en-GB,en-US;q=0.9,en;q=0.8,fr;q=0.7
 cache-control: max-age=0
@@ -47,4 +47,13 @@ user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Geck
 
 8. // Write parsed object below of the url ``http://localhost:3000/api/v3?token=8372fcb8y2874b2t478t6t48cbtbc72t4
 
+const add = 'http://localhost:3000/api/v3?token=8372fcb8y2874b2t478t6t48cbtbc72t4'
+const url = require('url')
+const parObj = url.parse(add, true)
+const qs = require('querystring')
+const parsedQuery = qs.parse(parObj.search)
+console.log(parObj)
+console.log(parsedQuery)
+
 9. // Write parsed query object
+
